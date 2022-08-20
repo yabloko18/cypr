@@ -1,0 +1,146 @@
+/* Section fullscreen */
+.fullscreen {
+    min-height: 95vh;
+    margin-bottom: 80px;
+}
+
+.fullscreen__image {
+    left: 0;
+    z-index: 0;
+}
+
+.fullscreen__image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+}
+
+.fullscreen__image img, .fullscreen__image picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fullscreen__container {
+    flex: 1 1 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 1;
+}
+
+.fullscreen__title {
+    margin-bottom: 80px;
+}
+
+.tabs {
+    background: #FBFBFB;
+    box-shadow: 0 0 10px rgba(138, 138, 138, 0.2);
+    max-width: 900px;
+    border-radius: 35px;
+}
+
+.tabs__items {
+    border-radius: 35px 35px 0 0;
+    padding: 20px;
+    left: 0;
+    margin: 0;
+}
+
+.tabs__items:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #E5E5E5;
+    bottom: 0;
+    right: 0;
+}
+
+.tabs__body {
+    padding: 20px;
+    border-radius: 0 0 35px 35px;
+}
+
+.tabs__items .col-auto {
+    margin-right: 20px;
+}
+
+.tabs__items .col-auto:last-child {
+    margin-right: 0;
+}
+
+.tabs__item {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #E5E5E5;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183.2%;
+    transition: .2s linear all;
+}
+
+.tabs__item:hover, .tabs__item:focus {
+    background-color: #0957CB;
+    border-color: #0957CB;
+    color: #fff;
+    outline: none;
+}
+
+.tabs__item._active {
+    background-color: #0957CB;
+    border-color: #0957CB;
+    color: #fff;
+}
+
+.tabs__block {
+    display: none;
+}
+
+.tabs__block._active {
+    display: flex;
+}
+
+section.fullscreen .form-control {
+    flex: 1 1 auto;
+}
+
+.button_mrg {
+    margin-left: 20px;
+}
+
+@media (max-width: 998px) {
+    .fullscreen__title {
+        margin-bottom: 60px;
+    }
+
+    .fullscreen {
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .fullscreen__title {
+        margin-bottom: 40px;
+    }
+
+    .fullscreen {
+        min-height: 88vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .fullscreen__title {
+        margin-bottom: 30px;
+    }
+
+    .fullscreen {
+        min-height: 80vh;
+    }
+}

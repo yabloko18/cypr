@@ -1,0 +1,256 @@
+/* Basic styles */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    background-color: #F7F7F7;
+    flex: 1 1 auto;
+}
+
+* {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Typography */
+h1 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 128px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+@media (max-width: 998px) {
+    h1 {
+        font-size: 96px;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* UI */
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-decoration-line: underline;
+    color: #030F31;
+    opacity: .6;
+}
+
+.button {
+    background-color: #0957CB;
+    border-color: #0957CB;
+    border-radius: 40px;
+    padding: 10px 20px;
+    transition: .2s linear all;
+    --bs-btn-focus-shadow-rgb: none;
+}
+
+.button:hover {
+    background-color: #030F31;
+    border-color: #030F31;
+}
+
+.select {
+    cursor: pointer;
+    background-image: url("../img/mainpage/arrow.svg");
+    background-size: 9px 9px;
+}
+
+.input_text, .select {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183.2%;
+    transition: .2s linear all;
+}
+
+.select:active, .select:focus, .input_text:active, .input_text:focus {
+    border-color: #0957CB;
+    box-shadow: none;
+}
+
+.input_text::placeholder {
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 183.2%;
+    opacity: .7;
+}
+
+.input_help {
+    color: #0957CB;
+    display: none;
+    margin: 10px 0 0 25px;
+}
+
+/* Header */
+header.header {
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+.header__link {
+    color: #030F31;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    transition: .2s linear all;
+}
+
+.header__link:hover, .header__link:active, .header__link:focus {
+    color: #0957CB;
+}
+
+/* Section properties (эти стили используются как на главной странице и на property) */
+.properties {
+    margin-bottom: 80px;
+}
+
+.properties .col__wrapper {
+    line-height: 120%;
+    background: #FBFBFB;
+    color: #030F31;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(138, 138, 138, 0.1);
+    transition: .2s linear all;
+}
+
+.properties .col__wrapper:hover {
+    color: #030F31;
+    box-shadow: 0 0 20px rgba(138, 138, 138, 0.2);
+}
+
+.properties .col__wrapper:hover .col__top img, .properties .col__top picture {
+    transform: scale(1.05);
+}
+
+.properties .col__top {
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+}
+
+.properties .col__top img, .properties .col__top picture {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: .2s linear all;
+}
+
+.properties .col__middle {
+    flex: 1 1 auto;
+    padding: 20px;
+}
+
+.properties .col__bottom {
+    padding: 0 20px 20px 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.properties .col__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.properties .col__subtitle {
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.8;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.properties .col__text {
+    font-weight: 300;
+    font-size: 12px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.properties .col__info {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.properties .info__group {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.properties .info__title {
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.properties .col__price {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.properties .price_grey {
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .properties {
+        margin-bottom: 80px;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    padding: 30px 0;
+}
+
+.footer__link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    transition: .2s linear all;
+}
+
+.footer__link:hover {
+    color: #0957CB;
+}

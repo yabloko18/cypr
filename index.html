@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Технические тэги-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <!--SEO тэги-->
+    <!--ПОМЕНЯТЬ--> <title>Title</title>
+    <!--ПОМЕНЯТЬ-->
+    <meta name="description" content="Description">
+    <!--ПОМЕНЯТЬ-->
+    <meta name="keywords" content="keyword1, keyword2">
+
+    <!--Тэги для социальных сетей-->
+    <!--ПОМЕНЯТЬ-->
+    <meta property="og:title" content="The Rock"/>
+    <!--ПОМЕНЯТЬ-->
+    <meta property="og:type" content="video.movie"/>
+    <!--ПОМЕНЯТЬ-->
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/>
+    <!--ПОМЕНЯТЬ-->
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/>
+    <!--ПОМЕНЯТЬ-->
+    <meta name="twitter:title" content="European Travel Destinations ">
+    <!--ПОМЕНЯТЬ-->
+    <meta name="twitter:description" content=" Offering tour packages for individuals or groups.">
+    <!--ПОМЕНЯТЬ-->
+    <meta name="twitter:image" content=" http://euro-travel-example.com/thumbnail.jpg">
+    <!--ПОМЕНЯТЬ-->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/montserrat/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainpageStyles.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <a class="header__link text-uppercase text-decoration-none" href="../">
+                Cyprus properties
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="fullscreen d-flex position-relative overflow-hidden">
+            <div class="fullscreen__container container d-flex flex-column justify-content-center w-100">
+                <h1 class="fullscreen__title">Cyprus properties</h1>
+                <div class="fullscreen__tabs tabs">
+                    <nav class="tabs__items position-relative w-100 top-0 d-flex overflow-auto mb-2">
+                        <div class="col-auto">
+                            <a href="#tab_01" class="tabs__item _active d-flex position-relative text-decoration-none">Residential</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#tab_02" class="tabs__item d-flex position-relative text-decoration-none">Commercial</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#tab_03"
+                               class="tabs__item d-flex position-relative text-decoration-none">Plot-Land</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#tab_04" class="tabs__item d-flex position-relative text-decoration-none">Investment
+                                Properties</a>
+                        </div>
+                    </nav>
+                    <div class="tabs__body mt-2">
+                        <div id="tab_01" class="tabs__block _active">
+                            <form class="form w-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Category">
+                                            <option selected value="rent">Rent</option>
+                                            <option value="buy">Buy</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Subcategory">
+                                            <option selected value="default">Subcategory</option>
+                                            <option value="house">House</option>
+                                            <option value="apartment">Apartment</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bedrooms">
+                                            <option selected value="default">Bedrooms</option>
+                                            <option value="1 bedrooms">1 bedrooms</option>
+                                            <option value="2 bedrooms">2 bedrooms</option>
+                                            <option value="3 bedrooms">3 bedrooms</option>
+                                            <option value="4 bedrooms">4 bedrooms</option>
+                                            <option value="5 bedrooms">5 bedrooms</option>
+                                            <option value="6 bedrooms">6 bedrooms</option>
+                                            <option value="7 bedrooms">7 bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bathrooms">
+                                            <option selected value="default">Bathrooms</option>
+                                            <option value="1 bathrooms">1 bathrooms</option>
+                                            <option value="2 bathrooms">2 bathrooms</option>
+                                            <option value="3 bathrooms">3 bathrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Area">
+                                            <option selected value="default">Area</option>
+                                            <option value="50-100">50-100 m²</option>
+                                            <option value="100-150">100-150 m²</option>
+                                            <option value="150-200">150-200 m²</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Price">
+                                            <option selected>Price</option>
+                                            <option value="500-1000">500-1000 €</option>
+                                            <option value="1000-1500">1000-1500 €</option>
+                                            <option value="1500-2000">1500-2000 €</option>
+                                            <option value="2000-2500">2000-2500 €</option>
+                                            <option value="2500-3000">2500-3000 €</option>
+                                            <option value="3000-3500">3000-3500 €</option>
+                                            <option value="3500-4000">3500-4000 €</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control input_text" id="searchQuery1"
+                                           placeholder="Party house for 13 people">
+                                    <label for="searchQuery1"></label>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary button button_mrg">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="tab_02" class="tabs__block">
+                            <form class="form w-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Category">
+                                            <option selected value="rent">Rent</option>
+                                            <option value="buy">Buy</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Subcategory">
+                                            <option selected value="default">Subcategory</option>
+                                            <option value="house">House</option>
+                                            <option value="apartment">Apartment</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bedrooms">
+                                            <option selected value="default">Bedrooms</option>
+                                            <option value="1 bedrooms">1 bedrooms</option>
+                                            <option value="2 bedrooms">2 bedrooms</option>
+                                            <option value="3 bedrooms">3 bedrooms</option>
+                                            <option value="4 bedrooms">4 bedrooms</option>
+                                            <option value="5 bedrooms">5 bedrooms</option>
+                                            <option value="6 bedrooms">6 bedrooms</option>
+                                            <option value="7 bedrooms">7 bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bathrooms">
+                                            <option selected value="default">Bathrooms</option>
+                                            <option value="1 bathrooms">1 bathrooms</option>
+                                            <option value="2 bathrooms">2 bathrooms</option>
+                                            <option value="3 bathrooms">3 bathrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Area">
+                                            <option selected value="default">Area</option>
+                                            <option value="50-100">50-100 m²</option>
+                                            <option value="100-150">100-150 m²</option>
+                                            <option value="150-200">150-200 m²</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Price">
+                                            <option selected>Price</option>
+                                            <option value="500-1000">500-1000 €</option>
+                                            <option value="1000-1500">1000-1500 €</option>
+                                            <option value="1500-2000">1500-2000 €</option>
+                                            <option value="2000-2500">2000-2500 €</option>
+                                            <option value="2500-3000">2500-3000 €</option>
+                                            <option value="3000-3500">3000-3500 €</option>
+                                            <option value="3500-4000">3500-4000 €</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control input_text" id="searchQuery2"
+                                           placeholder="Party house for 13 people">
+                                    <label for="searchQuery2"></label>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary button button_mrg">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="tab_03" class="tabs__block">
+                            <form class="form w-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Category">
+                                            <option selected value="rent">Rent</option>
+                                            <option value="buy">Buy</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Subcategory">
+                                            <option selected value="default">Subcategory</option>
+                                            <option value="house">House</option>
+                                            <option value="apartment">Apartment</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bedrooms">
+                                            <option selected value="default">Bedrooms</option>
+                                            <option value="1 bedrooms">1 bedrooms</option>
+                                            <option value="2 bedrooms">2 bedrooms</option>
+                                            <option value="3 bedrooms">3 bedrooms</option>
+                                            <option value="4 bedrooms">4 bedrooms</option>
+                                            <option value="5 bedrooms">5 bedrooms</option>
+                                            <option value="6 bedrooms">6 bedrooms</option>
+                                            <option value="7 bedrooms">7 bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bathrooms">
+                                            <option selected value="default">Bathrooms</option>
+                                            <option value="1 bathrooms">1 bathrooms</option>
+                                            <option value="2 bathrooms">2 bathrooms</option>
+                                            <option value="3 bathrooms">3 bathrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Area">
+                                            <option selected value="default">Area</option>
+                                            <option value="50-100">50-100 m²</option>
+                                            <option value="100-150">100-150 m²</option>
+                                            <option value="150-200">150-200 m²</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Price">
+                                            <option selected>Price</option>
+                                            <option value="500-1000">500-1000 €</option>
+                                            <option value="1000-1500">1000-1500 €</option>
+                                            <option value="1500-2000">1500-2000 €</option>
+                                            <option value="2000-2500">2000-2500 €</option>
+                                            <option value="2500-3000">2500-3000 €</option>
+                                            <option value="3000-3500">3000-3500 €</option>
+                                            <option value="3500-4000">3500-4000 €</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control input_text" id="searchQuery3"
+                                           placeholder="Party house for 13 people">
+                                    <label for="searchQuery3"></label>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary button button_mrg">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="tab_04" class="tabs__block">
+                            <form class="form w-100">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Category">
+                                            <option selected value="rent">Rent</option>
+                                            <option value="buy">Buy</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Subcategory">
+                                            <option selected value="default">Subcategory</option>
+                                            <option value="house">House</option>
+                                            <option value="apartment">Apartment</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bedrooms">
+                                            <option selected value="default">Bedrooms</option>
+                                            <option value="1 bedrooms">1 bedrooms</option>
+                                            <option value="2 bedrooms">2 bedrooms</option>
+                                            <option value="3 bedrooms">3 bedrooms</option>
+                                            <option value="4 bedrooms">4 bedrooms</option>
+                                            <option value="5 bedrooms">5 bedrooms</option>
+                                            <option value="6 bedrooms">6 bedrooms</option>
+                                            <option value="7 bedrooms">7 bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Bathrooms">
+                                            <option selected value="default">Bathrooms</option>
+                                            <option value="1 bathrooms">1 bathrooms</option>
+                                            <option value="2 bathrooms">2 bathrooms</option>
+                                            <option value="3 bathrooms">3 bathrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Area">
+                                            <option selected value="default">Area</option>
+                                            <option value="50-100">50-100 m²</option>
+                                            <option value="100-150">100-150 m²</option>
+                                            <option value="150-200">150-200 m²</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto mb-4 mb-4">
+                                        <select class="form-select select" aria-label="Price">
+                                            <option selected>Price</option>
+                                            <option value="500-1000">500-1000 €</option>
+                                            <option value="1000-1500">1000-1500 €</option>
+                                            <option value="1500-2000">1500-2000 €</option>
+                                            <option value="2000-2500">2000-2500 €</option>
+                                            <option value="2500-3000">2500-3000 €</option>
+                                            <option value="3000-3500">3000-3500 €</option>
+                                            <option value="3500-4000">3500-4000 €</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="text" class="form-control input_text" id="searchQuery4"
+                                           placeholder="Party house for 13 people">
+                                    <label for="searchQuery4"></label>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary button button_mrg">Search</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fullscreen__image position-absolute w-100 h-100 top-0">
+                <picture>
+                    <source srcset="img/mainpage/bg.webp">
+                    <img src="img/mainpage/bg.jpg" alt="background">
+                </picture>
+            </div>
+        </section>
+        <section class="properties">
+            <div class="container">
+                <div class="row mb-2 mb-md-4 justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/1.webp">
+                                    <img src="img/properties/1.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        4
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    2 500 €
+                                    <span class="price_grey">/ Monthly</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/2.webp">
+                                    <img src="img/properties/2.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    5-bedroom villa to rent...
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Jardin Exotique, Cyprus
+                                </div>
+                                <div class="col__text mb-5">
+                                    High Specs Villa with big overflow Swimming Pool, 5 bedrooms + 1 big playroom , 7
+                                    toilets with huge underground for up to 5 cars
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        175 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        3
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    7 000 €
+                                    <span class="price_grey">/ Monthly</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/3.webp">
+                                    <img src="img/properties/3.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    5-bedroom detached house to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Lefkosia (Nicosia) district, Kokkinotrimithia
+                                </div>
+                                <div class="col__text mb-5">
+                                    High Specs Villa with big overflow Swimming Pool, 5 bedrooms + 1 big playroom , 7
+                                    toilets with huge underground for up to 5 cars
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    <span class="price_grey">Price on request</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/4.webp">
+                                    <img src="img/properties/4.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    <span class="price_grey">Price on request</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/5.webp">
+                                    <img src="img/properties/5.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    4 200 000 €
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/6.webp">
+                                    <img src="img/properties/6.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    3 940 000 €
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/7.webp">
+                                    <img src="img/properties/7.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    <span class="price_grey">Price on request</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/8.webp">
+                                    <img src="img/properties/8.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    2 500 €
+                                    <span class="price_grey">/ Monthly</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col mb-4 d-flex col">
+                        <a class="col__wrapper text-decoration-none d-flex flex-column" href="property/">
+                            <div class="col__top position-relative w-auto overflow-hidden mb-3">
+                                <picture>
+                                    <source srcset="img/properties/9.webp">
+                                    <img src="img/properties/9.jpg" alt="house">
+                                </picture>
+                            </div>
+                            <div class="col__middle">
+                                <div class="col__title text-uppercase mb-2">
+                                    4-bedroom semi-detached to rent
+                                </div>
+                                <div class="col__subtitle mb-3">
+                                    Larnaca district, Livadia Larnakas
+                                </div>
+                                <div class="col__text mb-5">
+                                    The villa is executed in a minimalism style, fully furnished with Italian furniture
+                                    and fully equipped with modern high-quality household appliances
+                                </div>
+                            </div>
+                            <div class="col__bottom">
+                                <div class="col__info info mb-3 row">
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        120 m²
+                                        <span class="info__title">
+                                        Area
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        5
+                                        <span class="info__title">
+                                        bedrooms
+                                    </span>
+                                    </div>
+                                    <div class="info__group col-auto d-flex flex-column">
+                                        2
+                                        <span class="info__title">
+                                        bathrooms
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="col__price price">
+                                    <span class="price_grey">Price on request</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div>
+                        <button type="submit" class="btn btn-primary button">Show more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer__link text-uppercase text-decoration-none">Cyprus properties</a>
+        </div>
+    </footer>
+</div>
+<script src="js/tabs.js"></script>
+</body>
+</html>

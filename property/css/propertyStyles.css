@@ -1,0 +1,143 @@
+/* Navbar */
+.property-navbar {
+    padding: 40px 0;
+    background-color: #F7F7F7;
+    z-index: 20;
+}
+
+/* Swiper */
+.swiper-slide img, .swiper-slide picture {
+    height: 485px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button_prev, .button_next {
+    width: 40px;
+    height: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.button_prev {
+    left: 30px;
+}
+
+.button_next {
+    right: 30px;
+}
+
+.button_prev:after, .button_prev:before,
+.button_next:after, .button_next:before {
+    content: '';
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    transition: .2s linear all;
+}
+
+.button_prev:after {
+    bottom: 20px;
+    transform: rotate(45deg);
+}
+
+.button_prev:before {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
+.button_next:before {
+    bottom: 20px;
+    transform: rotate(-45deg);
+}
+
+.button_next:after {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.button_prev:hover:after, .button_prev:hover:before,
+.button_next:hover:after, .button_next:hover:before {
+    background-color: #0957CB;
+}
+
+/* Section property-info */
+.property-info h1, .property-info h2, .property-info .text {
+    color: #030F31;
+    line-height: 120%;
+}
+
+.property-info .text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.property-info .text_small {
+    font-size: 14px;
+}
+
+.property-info h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.property-info h2, .properties h2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.property-info .col__price {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.property-info .price_grey {
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.property-info {
+    margin-bottom: 85px;
+}
+
+.property-info .col__wrapper {
+    flex: 0 1 auto;
+}
+
+.property-info .col__text {
+    flex: 1 1 auto;
+}
+
+.col__description .text {
+    margin-bottom: 15px;
+}
+
+.col__description .text:last-child {
+    margin-bottom: 0;
+}
+
+.features .features__group {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.features .features__title {
+    font-weight: 300;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+    .property-info {
+        margin-bottom: 45px;
+    }
+    .property-info h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,85 @@
+/* Popup */
+.popup {
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    opacity: 0;
+    visibility: hidden;
+    overflow: auto;
+    cursor: pointer;
+    transition: .1s linear all;
+    z-index: 100;
+}
+
+.popup._active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup__body {
+    min-height: 100%;
+    padding: 15px;
+}
+
+.popup__content {
+    background-color: #fff;
+    color: #000;
+    max-width: 800px;
+    padding: 30px;
+    cursor: auto;
+    border-radius: 30px;
+}
+
+body._lock {
+    overflow: hidden;
+}
+
+.popup-form__input-group {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.popup-form__input-group:last-child {
+    margin-bottom: 0;
+}
+
+.popup-form__input-group input {
+    padding-left: 25px;
+}
+
+.popup-form__input-group input:focus {
+    outline: none;
+}
+
+.popup-form__input-group.unvalidated .input_help {
+    display: block;
+}
+
+.popup-form .successful {
+    display: none;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.popup-form.sent .successful {
+    display: flex;
+}
+
+.successful svg {
+    object-fit: contain;
+    object-position: center;
+    width: 80px;
+    height: 160px;
+}
+
+@media (max-width: 576px) {
+    .popup__content {
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    .popup-form__input-group {
+        width: auto;
+    }
+}
