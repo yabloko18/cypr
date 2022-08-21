@@ -1,7 +1,10 @@
 /* Section fullscreen */
 .fullscreen {
-    min-height: 95vh;
+    min-height: 100vh;
     margin-bottom: 80px;
+    margin-top: -84px;
+    position: relative;
+    z-index: 1;
 }
 
 .fullscreen__image {
@@ -119,10 +122,6 @@ section.fullscreen .form-control {
     .fullscreen__title {
         margin-bottom: 60px;
     }
-
-    .fullscreen {
-        min-height: 90vh;
-    }
 }
 
 @media (max-width: 767px) {
@@ -130,17 +129,10 @@ section.fullscreen .form-control {
         margin-bottom: 40px;
     }
 
-    .fullscreen {
-        min-height: 88vh;
-    }
 }
 
 @media (max-width: 576px) {
     .fullscreen__title {
         margin-bottom: 30px;
-    }
-
-    .fullscreen {
-        min-height: 80vh;
     }
 }
