@@ -66,28 +66,14 @@
 }
 
 /* Section property-info */
-.property-info h1, .property-info h2, .property-info .text {
+.property-info h1, .property-info .text {
     color: #030F31;
     line-height: 120%;
-}
-
-.property-info .text {
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.property-info .text_small {
-    font-size: 14px;
 }
 
 .property-info h1 {
     font-size: 48px;
     font-weight: 600;
-}
-
-.property-info h2, .properties h2 {
-    font-weight: 500;
-    font-size: 18px;
 }
 
 .property-info .col__price {
