@@ -43,6 +43,7 @@
 .tabs__body .form {
     background-color: #fff;
     padding: 25px 25px 5px 25px;
+    box-shadow: 0 0 20px rgba(138, 138, 138, 0.1);
 }
 
 .tabs__body .form .col-12 {
@@ -60,6 +61,7 @@
 .tabs__block .input_radio {
     margin-right: 20px;
 }
+
 .tabs__block .input_radio:last-child {
     margin-right: 0;
 }
@@ -67,7 +69,7 @@
     background-color: #fff;
     color: #000;
     border: 1px solid #E5E5E5;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 183.2%;
@@ -90,9 +92,11 @@
 .tabs__block {
     display: none;
 }
-.tabs__block .form-select, .tabs__block .button {
+
+.tabs__block .input_radio label, .tabs__block select, .tabs__block button {
     border-radius: 0;
 }
+
 .tabs__block._active {
     display: flex;
 }
@@ -115,7 +119,9 @@ section.fullscreen .form-control {
     .fullscreen__title {
         margin-bottom: 40px;
     }
-
+    .tabs__block .input_radio {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 576px) {

@@ -65,13 +65,13 @@
                             <form class="form search-form">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-sm-6 col-md-auto d-flex justify-content-center">
-                                        <div class="input_radio">
-                                            <input type="radio" id="buy1" name="category" checked>
-                                            <label for="buy1">Buy</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="buy1" name="category" value="buy" checked>
+                                            <label for="buy1" class="w-100 text-center">Buy</label>
                                         </div>
-                                        <div class="input_radio">
-                                            <input type="radio" id="rent1" name="category">
-                                            <label for="rent1">Rent</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="rent1" name="category" value="rent">
+                                            <label for="rent1" class="w-100 text-center">Rent</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -123,20 +123,21 @@
                             <form class="form search-form">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-sm-6 col-md-auto d-flex justify-content-center">
-                                        <div class="input_radio">
-                                            <input type="radio" id="buy2" name="category" checked>
-                                            <label for="buy2">Buy</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="buy2" name="category" value="buy" checked>
+                                            <label for="buy2" class="w-100 text-center">Buy</label>
                                         </div>
-                                        <div class="input_radio">
-                                            <input type="radio" id="rent2" name="category">
-                                            <label for="rent2">Rent</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="rent2" name="category" value="rent">
+                                            <label for="rent2" class="w-100 text-center">Rent</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
                                         <select class="form-select select" aria-label="Subcategory">
                                             <option selected value="default">Subcategory</option>
-                                            <option value="house">House-Villa</option>
-                                            <option value="apartment">Apartment</option>
+                                            <option value="Office">Office</option>
+                                            <option value="Shop">Shop</option>
+                                            <option value="Warehouse">Warehouse</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -150,7 +151,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Min. Bedrooms">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="buy">
                                             <option selected value="default">Min. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -193,7 +194,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Max. Bedrooms">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="buy">
                                             <option selected value="default">Max. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -235,6 +236,51 @@
                                             <option value="14 000 000 €">14 000 000 €</option>
                                             <option value="15 000 000 €">15 000 000 €</option>
                                             <option value="15 000 000 € +">15 000 000 € +</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="rent">
+                                            <option selected value="default">Min. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="rent">
+                                            <option selected value="default">Max. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                            <option value="5 000 €">5 000 € +</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -249,20 +295,20 @@
                             <form class="form search-form">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-sm-6 col-md-auto d-flex justify-content-center">
-                                        <div class="input_radio">
-                                            <input type="radio" id="buy3" name="category" checked>
-                                            <label for="buy3">Buy</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="buy3" name="category" value="buy" checked>
+                                            <label for="buy3" class="w-100 text-center">Buy</label>
                                         </div>
-                                        <div class="input_radio">
-                                            <input type="radio" id="rent3" name="category">
-                                            <label for="rent3">Rent</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="rent3" name="category" value="rent">
+                                            <label for="rent3" class="w-100 text-center">Rent</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
                                         <select class="form-select select" aria-label="Subcategory">
                                             <option selected value="default">Subcategory</option>
-                                            <option value="house">House-Villa</option>
-                                            <option value="apartment">Apartment</option>
+                                            <option value="Land">Land</option>
+                                            <option value="Plot">Plot</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -276,7 +322,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Min. Bedrooms">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="buy">
                                             <option selected value="default">Min. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -319,7 +365,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Max. Bedrooms">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="buy">
                                             <option selected value="default">Max. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -361,6 +407,51 @@
                                             <option value="14 000 000 €">14 000 000 €</option>
                                             <option value="15 000 000 €">15 000 000 €</option>
                                             <option value="15 000 000 € +">15 000 000 € +</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="rent">
+                                            <option selected value="default">Min. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="rent">
+                                            <option selected value="default">Max. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                            <option value="5 000 €">5 000 € +</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -375,20 +466,21 @@
                             <form class="form search-form">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-sm-6 col-md-auto d-flex justify-content-center">
-                                        <div class="input_radio">
-                                            <input type="radio" id="buy4" name="category" checked>
-                                            <label for="buy4">Buy</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="buy4" name="category" value="buy" checked>
+                                            <label for="buy4" class="w-100 text-center">Buy</label>
                                         </div>
-                                        <div class="input_radio">
-                                            <input type="radio" id="rent4" name="category">
-                                            <label for="rent4">Rent</label>
+                                        <div class="input_radio col-6 col-md-auto">
+                                            <input type="radio" id="rent4" name="category" value="rent">
+                                            <label for="rent4" class="w-100 text-center">Rent</label>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
                                         <select class="form-select select" aria-label="Subcategory">
                                             <option selected value="default">Subcategory</option>
-                                            <option value="house">House-Villa</option>
-                                            <option value="apartment">Apartment</option>
+                                            <option value="Commercial">Commercial</option>
+                                            <option value="Residential">Residential</option>
+                                            <option value="Mixed Use">Mixed Use</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
@@ -402,7 +494,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Min. Bedrooms">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="buy">
                                             <option selected value="default">Min. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -445,7 +537,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
-                                        <select class="form-select select" aria-label="Max. Bedrooms">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="buy">
                                             <option selected value="default">Max. Price</option>
                                             <option value="Any">Any</option>
                                             <option value="100 000 €">100 000 €</option>
@@ -487,6 +579,51 @@
                                             <option value="14 000 000 €">14 000 000 €</option>
                                             <option value="15 000 000 €">15 000 000 €</option>
                                             <option value="15 000 000 € +">15 000 000 € +</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Min. Bedrooms" data-category="rent">
+                                            <option selected value="default">Min. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <select class="form-select select" aria-label="Max. Bedrooms" data-category="rent">
+                                            <option selected value="default">Max. Price</option>
+                                            <option value="Any">Any</option>
+                                            <option value="300 €">300 €</option>
+                                            <option value="400 €">400 €</option>
+                                            <option value="500 €">500 €</option>
+                                            <option value="600 €">600 €</option>
+                                            <option value="700 €">700 €</option>
+                                            <option value="800 €">800 €</option>
+                                            <option value="900 €">900 €</option>
+                                            <option value="1 000 €">1 000 €</option>
+                                            <option value="1 500 €">1 500 €</option>
+                                            <option value="2 000 €">2 000 €</option>
+                                            <option value="2 500 €">2 500 €</option>
+                                            <option value="3 000 €">3 000 €</option>
+                                            <option value="3 500 €">3 500 €</option>
+                                            <option value="4 000 €">4 000 €</option>
+                                            <option value="4 500 €">4 500 €</option>
+                                            <option value="5 000 €">5 000 €</option>
+                                            <option value="5 000 €">5 000 € +</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
